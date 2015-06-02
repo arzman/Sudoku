@@ -74,10 +74,8 @@ public class SudoSolverOne extends Thread {
 
 	public void resolve() {
 
-		long timeDeb = Calendar.getInstance().getTimeInMillis();
 		setState(state);
 		boolean changed = true;
-		System.out.println("Begin");
 
 		while (changed) {
 
@@ -157,9 +155,6 @@ public class SudoSolverOne extends Thread {
 		if (_forkLvl == 0) {
 			_zeGrille.getWriter().setSolved(isSolved());
 		}
-
-		long timefine = Calendar.getInstance().getTimeInMillis();
-		System.out.println("End in : " + (timefine - timeDeb) + " ms");
 	}
 
 	private Integer[][] getIntGrid() {
