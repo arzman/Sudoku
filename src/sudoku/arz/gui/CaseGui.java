@@ -61,11 +61,7 @@ public class CaseGui extends JPanel implements KeyListener, FocusListener, Mouse
 
 		} catch (NumberFormatException ex) {
 			
-			try{
-				Integer.parseInt(getText());
-			}catch(NumberFormatException ex2){
-				setText("");
-			}
+			
 			
 			
 		}
